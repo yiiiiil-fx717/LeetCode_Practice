@@ -59,10 +59,10 @@ public class Leetcode_454 {
 	}
 	
 	public static void main(String[] args) {
-		int[] nums1 = {1, 2};
-		int[] nums2 = {-2, -1};
-		int[] nums3 = {-1, 2};
-		int[] nums4 = {0, 2};
+		int[] nums1 = {1, 2, 1, -1, -2};
+		int[] nums2 = {-2, -1, 2, 1, -1};
+		int[] nums3 = {-1, 2, -1, -1, 1};
+		int[] nums4 = {0, 2, 1, 1, -1};
 		System.out.println(fourSumCount1(nums1, nums2, nums3, nums4));
 		System.out.println(fourSumCount2(nums1, nums2, nums3, nums4));
 	}
