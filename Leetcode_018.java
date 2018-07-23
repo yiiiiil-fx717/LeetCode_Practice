@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Leetcode_18 {
-	
-	public static List<List<Integer>> fourSum(int[] nums, int target){
-		List<List<Integer>> result = new ArrayList<>();
+public class Leetcode_018 {
+	public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> result = new ArrayList<>();
 		if(nums == null || nums.length < 4){
 			return result;
 		}
@@ -52,11 +51,5 @@ public class Leetcode_18 {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		int[] nums = {1, 0, -1, 0, -2, 2};
-		int target = 0;
-		System.out.println(fourSum(nums, target));
-	}
+    }
 }

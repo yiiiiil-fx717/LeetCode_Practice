@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class leetcode_15 {
-	
-	public static List<List<Integer>> threeSum(int[] nums){
-		List<List<Integer>> result = new ArrayList<>();
+public class Leetcode_015 {
+	public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
 		if(nums.length < 3 || nums == null){
 			return result;
 		}
@@ -32,8 +31,8 @@ public class leetcode_15 {
 					
 					j++;
 					k--;
-					
-					while(j < k && nums[j] == nums[j - 1]){
+                    
+                    while(j < k && nums[j] == nums[j - 1]){
 						j++;
 					}
 					while(j < k && nums[k] == nums[k + 1]){
@@ -47,10 +46,5 @@ public class leetcode_15 {
 			}
 		}
 		return result;
-	}
-
-	public static void main(String[] args) {
-		int[] nums = {-1,0,1,2,-1,-4,3,-1,0,0,2,4};
-		System.out.println(threeSum(nums));
-	}
+    }
 }

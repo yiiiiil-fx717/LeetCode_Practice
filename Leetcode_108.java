@@ -9,12 +9,12 @@ package Leetcode;
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Leetcode108 {
+public class Leetcode_108 {
 	public TreeNode sortedArrayToBST(int[] nums) {        
         return method(nums, 0, nums.length - 1);
     }
     
-    private TreeNode method(int[] nums, int beginIdx, int endIdx){
+    private static TreeNode method(int[] nums, int beginIdx, int endIdx){
         if(beginIdx > endIdx) return null;
         int midIdx = (beginIdx + endIdx + 1) / 2;
         TreeNode root = new TreeNode(nums[midIdx]);
