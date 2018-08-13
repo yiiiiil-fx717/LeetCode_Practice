@@ -4,7 +4,7 @@ public class Leetcode_303 /* class NumArray */ {
 	private int[] sum;
     
     //constructor
-    public NumArray(int[] nums) {
+    public Leetcode_303(int[] nums) {
         sum =  new int[nums.length + 1];
         for(int i = 0; i < nums.length; i++){
             sum[i + 1] = nums[i] + sum[i];

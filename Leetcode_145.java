@@ -12,6 +12,16 @@ import java.util.List;
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+class TreeNode{
+	int val;
+	TreeNode left;
+	TreeNode right;
+	TreeNode(int x){
+		val = x;
+	}
+}
+
 public class Leetcode_145 {
 	public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();

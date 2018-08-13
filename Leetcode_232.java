@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Leetcode_232 {
 	/** Initialize your data structure here. */
-    public MyQueue() {
+    public Leetcode_232() {
         Stack<Integer> stack1 = new Stack();
         Stack<Integer> stack2 = new Stack();   
     }

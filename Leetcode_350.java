@@ -1,8 +1,11 @@
 package Leetcode;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Leetcode_350 {
 	public int[] intersect(int[] nums1, int[] nums2) {
-        List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         int pointer1 = 0;
         int pointer2 = 0;
         Arrays.sort(nums1);
